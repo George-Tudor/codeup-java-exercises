@@ -22,11 +22,13 @@ public class ConsoleExercises {
 //        String newString = scanner.nextLine();
 //        System.out.printf("Your sentence was: %s%n", newString);
 
-        System.out.println("Enter the dimensions of your Codeup classroom (width and length): ");
-        int width = Integer.parseInt(scanner.nextLine());
-        int length = Integer.parseInt((scanner.nextLine()));
-        int area = width * length;
-        int perimeter = (2 * width) + (2 * length);
-        System.out.printf("The area of your classroom is %s, and the perimeter is %s%n", area, perimeter);
+        System.out.println("Enter the dimensions of your Codeup classroom (width, length, and height): ");
+        float width = Float.parseFloat(scanner.nextLine());
+        float length = Float.parseFloat(scanner.nextLine());
+        float height = Float.parseFloat(scanner.nextLine());
+        float area = width * length;
+        float perimeter = (2 * width) + (2 * length);
+        float volume = width * length * height;
+        System.out.printf("The area of your classroom is %s, the perimeter is %s, and the volume is %s.%n", area, perimeter, volume);
     }
 }
