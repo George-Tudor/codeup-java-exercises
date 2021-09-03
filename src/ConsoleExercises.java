@@ -21,5 +21,12 @@ public class ConsoleExercises {
 //        System.out.println("Enter a sentence: ");
 //        String newString = scanner.nextLine();
 //        System.out.printf("Your sentence was: %s%n", newString);
+
+        System.out.println("Enter the dimensions of your Codeup classroom (width and length): ");
+        int width = Integer.parseInt(scanner.nextLine());
+        int length = Integer.parseInt((scanner.nextLine()));
+        int area = width * length;
+        int perimeter = (2 * width) + (2 * length);
+        System.out.printf("The area of your classroom is %s, and the perimeter is %s%n", area, perimeter);
     }
 }
