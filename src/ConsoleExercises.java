@@ -7,8 +7,8 @@ public class ConsoleExercises {
 //        System.out.format("The value of pi is approximately " + pi);
 
 //        System.out.println("Enter an integer: ");
-//        int nextInt = scanner.nextInt();
-//        System.out.printf("The integer is %s!", nextInt);
+//        int userInput = scanner.nextInt();
+//        System.out.printf("The integer is %s!", userInput);
 
 //        System.out.println("Enter 3 words: ");
 //        String firstWord = scanner.nextLine();
