@@ -36,6 +36,18 @@ public class MethodsExercises {
 
         }
 
+        public static int getFactorial() {
+            System.out.println("Enter a number between 1 and 10: ");
+            int num = checkRange(1, 10);
+            int counter = 1;
+            for(int i = num; i > 0; i--) {
+                counter = counter * i;
+                System.out.println(i + "! = " + i + "\t\t\t = " + counter);
+            }
+
+            return counter;
+        }
+
 
         public static void main (String[] args){
             System.out.println("The output for the addition method is " + addInts(27, 81));
@@ -45,7 +57,7 @@ public class MethodsExercises {
             System.out.println("The output for the modulus method is " + modulo(81, 8));
             System.out.println("Enter a number between 1 and 10: ");
             int userInput = checkRange(1, 10);
-
+            getFactorial();
         }
     }
 
