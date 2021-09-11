@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 
 public class MethodsExercises {
@@ -30,22 +31,35 @@ public class MethodsExercises {
         if (userInput >= min && userInput <= max) {
             System.out.println("Your number is " + userInput);
             return userInput;
-
-        }   System.out.println("The number must be between " + min + " and " + max + ", try again.");
+        }
+            System.out.println("The number must be between " + min + " and " + max + ", try again.");
             return checkRange(min, max);
 
         }
 
-        public static int getFactorial() {
+        public static void getFactorial() {
             System.out.println("Enter a number between 1 and 10: ");
             int num = checkRange(1, 10);
             int counter = 1;
             for(int i = num; i > 0; i--) {
                 counter = counter * i;
-                System.out.println(i + "! = " + i + "\t\t\t = " + counter);
-            }
 
-            return counter;
+            }
+            System.out.println(num + "! = " + counter);
+        }
+
+//        public static int randomDice() {
+//            (int) return Math.floor(Math.random() * 6);
+//        }
+
+        public static void diceRoller() {
+            System.out.print("Enter the number of sides for a pair of dice: ");
+            int diceSides = scanner.nextInt();
+            System.out.println("Roll the dice!");
+
+
+
+
         }
 
 
@@ -58,6 +72,7 @@ public class MethodsExercises {
             System.out.println("Enter a number between 1 and 10: ");
             int userInput = checkRange(1, 10);
             getFactorial();
+            diceRoller();
         }
     }
 

@@ -2,20 +2,19 @@ import java.util.Scanner;
 
 public class MethodsMiniExercises {
 
+
     // TODO: break the following code apart into a few methods
     public static String getStringInput() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an input.");
-        String stringInput = sc.nextLine();
-        return stringInput;
-    }
+        return sc.nextLine();
+        }
 
     public static int getUserInt() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer.");
-        int intInput = sc.nextInt(); // assume the user will enter a valid integer
-        return intInput;
-    }
+        return sc.nextInt(); // assume the user will enter a valid integer
+        }
 
     public static void outputInfo() {
         String stringInput = getStringInput();
