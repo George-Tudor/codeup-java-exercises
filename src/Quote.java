@@ -8,7 +8,7 @@ public class Quote {
         } else if (quoteNum == 3) {
             return "Board's don't hit back.";
         } else if (quoteNum == 4) {
-            return "Water can flow or water can crash, be like water my friend";
+            return "Water can flow or water can crash, be like water my friend.";
         } else {
             return "There's a problem.";
         }
