@@ -1,16 +1,16 @@
 import org.w3c.dom.ls.LSOutput;
 
 public class Lion {
-    public String name;
-    public String sound;
+    private String name;
+    private String sound;
 
-//    public void setName(String name) {
-//        this.name = name;
-//    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-//    public String getName() {
-//        return name;
-//    }
+    public String getName() {
+        return name;
+    }
 
     public void makeNoise() {
 

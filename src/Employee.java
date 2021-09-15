@@ -2,6 +2,10 @@ public class Employee {
     public String name;
     public static String company = "Veridian Dynamics";
 
+    public Employee(String name) {
+        this.name = name;
+    }
+
     public void displayEmployeeInfo() {
         System.out.println(name + " works at " + company);
     }

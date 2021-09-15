@@ -1,5 +1,7 @@
-public class PersonTest {
-    public static void main(String[] args) {
-        Person person = new Person();
-    }
-}
+//public class PersonTest {
+//    public static void main(String[] args) {
+//        Person person = new Person();
+//        person.setName("George");
+//        person.sayHello();
+//    }
+//}

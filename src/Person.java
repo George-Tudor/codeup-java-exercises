@@ -1,5 +1,7 @@
 public class Person {
+
     private String name;
+
     public String getName(){
         return name;
     }
@@ -8,14 +10,10 @@ public class Person {
         this.name = name;
     }
     public void sayHello(){
-
-        System.out.println("Hello " + name);
+        System.out.println("His name is " + this.name);
     }
 
-    public Person () {
-
-    }
-    public Person (String name) {
-        this.name = name;
+    public Person(String name) {
+        this.name =name;
     }
 }
