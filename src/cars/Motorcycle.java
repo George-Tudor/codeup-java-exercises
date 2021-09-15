@@ -8,4 +8,12 @@ public class Motorcycle extends Vehicle{
         System.out.println("Pop screeeeeeech clunk clunck");
     }
 
+    public Motorcycle() {
+
+    }
+
+    public Motorcycle(String name) {
+        super(name);
+    }
+
 }

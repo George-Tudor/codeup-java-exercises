@@ -5,4 +5,12 @@ public class Penguin extends Bird{
         super.makeNoise();
         System.out.println("Honk Honk");
     }
+
+    public void move() {
+        System.out.println("Waddle waddle");
+    }
+
+    public Penguin() {
+        super();
+    }
 }

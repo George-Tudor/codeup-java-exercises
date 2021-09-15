@@ -28,6 +28,11 @@ public class Bird {
     public Bird() {
 
     }
+
+    public Bird(String name) {
+        System.out.println("A new bird has been created.");
+        this.name = name;
+    }
 }
 
 

@@ -33,7 +33,7 @@ public class ArraysExercises {
             System.out.println(p.getName());
         }
 
-        Arrays.toString(person);
+//        Arrays.toString(person);
         person = addPerson(person, new Person("Ryan"));
 
         System.out.println(Arrays.toString(person));

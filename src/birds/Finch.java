@@ -7,4 +7,8 @@ public class Finch extends  Bird{
         //then add extra custom cocde after running the superclass code
         System.out.println("Chirp chirp");
     }
+
+    public Finch() {
+        System.out.println("A new finch has been created.");
+    }
 }

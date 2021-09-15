@@ -26,5 +26,7 @@ public class VehicleTest {
         System.out.println("The Hayabusa goes ");
         hayabusa.makeNoise();
 
+        Car rx7 = new Car("Mazda Rx-7");
+
     }
 }
