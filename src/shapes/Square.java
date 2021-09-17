@@ -2,7 +2,7 @@ package shapes;
 
 public class Square extends Rectangle {
 
-    protected int side;
+    private int side;
 
     public Square(int side) {
         super(side, side);
@@ -10,7 +10,7 @@ public class Square extends Rectangle {
     }
 
     public int getArea() {
-        return side ^ 2;
+        return side * side;
     }
 
     public int getPerimeter() {
