@@ -11,3 +11,4 @@ public class AnimalTest {
         fluffy.responseToCommand("sit");
     }
 }
+
