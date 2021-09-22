@@ -35,11 +35,13 @@ public class GradesApplication {
 
         System.out.println("Welcome!\n");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Here are teh GitHub usernames of our students: \n");
-        List<String> userName = new ArrayList<String>(userNames.keySet());
-        System.out.println(userNames);
+        System.out.println("Here are the GitHub usernames of our students: \n");
+        List<String> userName = new ArrayList<>(userNames.keySet());
+        System.out.println(userName + "\n");
         System.out.println("Which student would you like to see more information on? \n");
-        //String userName = scanner.nextLine();
+        String input = scanner.nextLine();
+        
+
 
     }
 }
