@@ -3,7 +3,7 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner;
+    private Scanner scanner = new Scanner(System.in);
 
     public String getString() {
         System.out.println("Please enter a string: ");
@@ -14,6 +14,7 @@ public class Input {
 
 
     public Input() {
+
         this.scanner = new Scanner(System.in);
     }
 }
