@@ -1,6 +1,6 @@
 package movie2;
 
-public class Movie2 {
+public class Movie2 implements Entertains{
 
     private String name;
     private String director;
@@ -29,5 +29,12 @@ public class Movie2 {
 
     public void setDirector(String director) {
         this.director = director;
+
+
+    }
+
+    @Override
+    public String audienceReaction() {
+        return "ooooooooohhhh " + this.name + " was so awesome!";
     }
 }

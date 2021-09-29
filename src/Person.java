@@ -14,6 +14,19 @@ public class Person {
     }
 
     public Person(String name) {
-        this.name =name;
+        setName(name);
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person("Bill");
+        System.out.println(person.getName());
+
+        Person person1 = new Person("John");
+        Person person2 = person1;
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        person2.setName("Jane");
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
     }
 }
