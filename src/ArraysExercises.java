@@ -7,7 +7,9 @@ public class ArraysExercises {
         Person[] output = Arrays.copyOf(person, person.length + 1);
         output[person.length] = newPerson;
         return output;
+
     }
+
 
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
@@ -23,20 +25,22 @@ public class ArraysExercises {
 //        people[1] = p2;
 //        people[2] = p3;
 
-        Person[] person = {
+        Person[] people = {
                 new Person("Eddie"),
                 new Person("Steve"),
                 new Person("Bill")
         };
 
-        for (Person p : person) {
-            System.out.println(p.getName());
-        }
+
 
 //        Arrays.toString(person);
-        person = addPerson(person, new Person("Ryan"));
+        people = addPerson(people, new Person("Ryan"));
 
-        System.out.println(Arrays.toString(person));
+        System.out.println((Arrays.toString(people)));
+
+        for (Person p : people) {
+            System.out.println(p.getName());
+        }
     }
 
 

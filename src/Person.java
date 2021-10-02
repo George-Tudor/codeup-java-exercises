@@ -17,6 +17,11 @@ public class Person {
         setName(name);
     }
 
+    @Override
+    public String toString() {
+        return this.getName();
+    }
+
     public static void main(String[] args) {
         Person person = new Person("Bill");
         System.out.println(person.getName());
