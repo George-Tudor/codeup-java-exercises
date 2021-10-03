@@ -1,17 +1,32 @@
 package shapes;
+import util.Input;
 
 public class ShapesTest {
 
     public static void main(String[] args) {
+        Input input = new Input();
+        System.out.print("Enter the length of the rectangle: ");
+        double length = input.getDouble();
+        System.out.print("Enter the width of the rectangle: ");
+        double width = input.getDouble();
+        Measurable myShape = new Rectangle(length, width);
 
-        Measurable myShape = new Rectangle(12, 10);
+        System.out.println("The area of the rectangle is: " + myShape.getArea());
+        System.out.println("The perimeter of the rectangle is : " + myShape.getPerimeter());
 
-        System.out.println(myShape.getArea());
-        System.out.println(myShape.getPerimeter());
+        System.out.print("Enter the side dimension of the square: ");
+        double side = input.getDouble();
 
-        myShape = new Square(6);
-        System.out.println(myShape.getArea());
-        System.out.println(myShape.getPerimeter());
+        myShape = new Square(side);
+        System.out.println("The area of the square is: " + myShape.getArea());
+        System.out.println("The perimeter of the square is: " + myShape.getPerimeter());
+
+        Rectangle box1 = new Rectangle(5, 4);
+        System.out.println(box1.getPerimeter());
+        System.out.println(box1.getArea());
+
+
+        //Rectangle box2 = new Square(5);
     }
 
 
