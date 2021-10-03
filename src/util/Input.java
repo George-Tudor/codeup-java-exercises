@@ -34,7 +34,6 @@ public class Input {
 public double getDouble(double min, double max) {
         double userInput;
         do {
-            System.out.println("Enter a number between " + min + " and " + max);
             userInput = scanner.nextDouble();
         } while (userInput < min || userInput > max);
         return userInput;
@@ -42,7 +41,6 @@ public double getDouble(double min, double max) {
     }
 
     public double getDouble() {
-        System.out.println("Enter a double: ");
         return scanner.nextDouble();
     }
 
