@@ -26,7 +26,8 @@ public class ShapesTest {
         System.out.println(box1.getArea());
 
 
-        //Rectangle box2 = new Square(5);
+        Quadrilateral box2 = new Square(5);
+
     }
 
 
