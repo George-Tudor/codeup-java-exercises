@@ -8,13 +8,45 @@
 //        System.out.println(flipOuterCase(“caT”)); // Cat
 //        System.out.println(flipOuterCase(“cAt”)); // CAT
 
+import javax.swing.*;
+import java.lang.reflect.Array;
+import java.nio.CharBuffer;
+import java.nio.channels.ScatteringByteChannel;
+import java.util.stream.Collectors;
+
 public class JavaDrills {
-    public static String flipOuterCase(String word) {
-        char[] charArray = word.toCharArray();
-        for(int i = 0; i < word.length(); i++) {
-            if(Character.isLowerCase(word.charAt(i)) {
-                //word.charAt(i).
+    public static String flipFirstCase(String word) {
+        String firstLetterFlipped = "";
+        if(Character.isUpperCase(word.charAt(0))) {
+            firstLetterFlipped  = word.substring(0, 1).toLowerCase() + word.substring(1);
+        } else if(Character.isLowerCase(word.charAt(0))) {
+            firstLetterFlipped  = word.substring(0, 1).toUpperCase() + word.substring(1);
+                }
+        return firstLetterFlipped;
             }
+
+        public static String flipLastCase(String word) {
+            String lastLetterFLipped = "";
+            if(Character.isUpperCase(word.charAt(word.length() -1))) {
+                lastLetterFLipped = word.substring(0, word.length() -1) + word.substring(word.length() -1).toLowerCase();
+            } else if(Character.isLowerCase(word.charAt(word.length() -1))) {
+                lastLetterFLipped = word.substring(0, word.length() -1) + word.substring(word.length() -1).toUpperCase();
+            }
+            return lastLetterFLipped;
         }
+
+        public static String flipOuterCase(String word) {
+            return flipLastCase(flipFirstCase(word));
+        }
+            
+         
+
+    public static void main(String[] args) {
+        System.out.println(flipOuterCase("cat")); // CaT
+        System.out.println(flipOuterCase("CaT")); // cat
+        System.out.println(flipOuterCase("caT")); // Cat
+        System.out.println(flipOuterCase("cAt")); // CAT
     }
 }
+
+
