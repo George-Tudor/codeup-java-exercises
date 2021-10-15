@@ -12,6 +12,9 @@ import javax.swing.*;
 import java.lang.reflect.Array;
 import java.nio.CharBuffer;
 import java.nio.channels.ScatteringByteChannel;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class JavaDrills {
@@ -38,6 +41,18 @@ public class JavaDrills {
         public static String flipOuterCase(String word) {
             return flipLastCase(flipFirstCase(word));
         }
+
+        public static int addArrayValues(List<Integer> arraylist) {
+            int arraySum = 0;
+            for(int i = 0; i < arraylist.size(); i++ ) {
+                arraySum += arraylist.get(i);
+            }
+            return arraySum;
+    }
+
+        public static int returnTotalDifference(List<Integer> arr1, List<Integer> arr2) {
+            return addArrayValues(arr1) - addArrayValues(arr2);
+        }
             
          
 
@@ -46,6 +61,10 @@ public class JavaDrills {
         System.out.println(flipOuterCase("CaT")); // cat
         System.out.println(flipOuterCase("caT")); // Cat
         System.out.println(flipOuterCase("cAt")); // CAT
+
+        System.out.println(returnTotalDifference(Arrays.asList(10, 2, 3), Arrays.asList(1, 2, 3)));
+        System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7)));
+        System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7, 1)));
     }
 }
 
