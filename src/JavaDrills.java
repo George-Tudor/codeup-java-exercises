@@ -53,6 +53,27 @@ public class JavaDrills {
         public static int returnTotalDifference(List<Integer> arr1, List<Integer> arr2) {
             return addArrayValues(arr1) - addArrayValues(arr2);
         }
+
+        public static String flipInnerCase(String word) {
+            String innerLetters = "";
+//            if(Character.isUpperCase(word.charAt(0))) {
+//                firstLetterFlipped  = word.substring(0, 1).toLowerCase() + word.substring(1);
+//            } else if(Character.isLowerCase(word.charAt(0))) {
+//                firstLetterFlipped  = word.substring(0, 1).toUpperCase() + word.substring(1);
+//            }
+//            return firstLetterFlipped;
+            innerLetters = word.substring(1, word.length() -1);
+            String innerLettersFlipped = "";
+            for(int i = 0; i < innerLetters.length(); i++) {
+                if(Character.isUpperCase(innerLetters.charAt(i))) {
+//                firstLetterFlipped  = word.substring(0, 1).toLowerCase() + word.substring(1);
+//            } else if(Character.isLowerCase(word.charAt(0))) {
+//                firstLetterFlipped  = word.substring(0, 1).toUpperCase() + word.substring(1);
+//            }
+            }
+
+            return innerLetters;
+        }
             
          
 
@@ -65,6 +86,9 @@ public class JavaDrills {
         System.out.println(returnTotalDifference(Arrays.asList(10, 2, 3), Arrays.asList(1, 2, 3)));
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7)));
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7, 1)));
+
+        System.out.println("");
+        System.out.println(flipInnerCase("cODEUp"));
     }
 }
 
